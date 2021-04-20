@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6c2c3c5d-eb07-4758-8e5d-c97196ae05f0" solutionId="6c2c3c5d-eb07-4758-8e5d-c97196ae05f0" resetWebServer="false" sharePointProductVersion="19.0" name="ArtDevBranding" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="0327b0dd-9559-4878-a388-fe4f52f5ff6b" />
+  </features>
+</package>
