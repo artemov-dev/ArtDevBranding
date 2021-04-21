@@ -52,6 +52,9 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\MasterPage\MasterPage.EventReceiver.cs">
+      <DependentUpon>MasterPage.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,14 +71,27 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="Theme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea98aa65-1cbc-4721-8c93-22a2604af860}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\ArtDev\ArtDev\ArtDev.csproj">
+      <Project>{76a2735d-d770-4980-840e-5933855f3d80}</Project>
+      <Name>ArtDev</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Features\MasterPage\MasterPage.Template.xml">
       <DependentUpon>MasterPage.feature</DependentUpon>
     </Content>
     <Content Include="MasterPage\Elements.xml" />
+    <Content Include="Theme\Elements.xml" />
+    <None Include="Theme\ArtDev.spcolor" />
     <None Include="MasterPage\ArtDev.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

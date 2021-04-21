@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="MasterPage" List="116" Url="_catalogs/masterpage" RootWebOnly="TRUE">
-    <File Path="MasterPage\ArtDev.master" Url="ArtDev.master" Type="GhostableInLibrary" ReplaceContent="TRUE" Level="Published" />
+    <File Path="MasterPage\ArtDev.master" Url="ArtDev.master" Type="GhostableInLibrary" ReplaceContent="TRUE" Level="Published">
+      <Property Name="ContentType" Value="Master Page" />
+      <Property Name="UIVersion" Value="15"></Property>
+    </File>
   </Module>
 </Elements>
